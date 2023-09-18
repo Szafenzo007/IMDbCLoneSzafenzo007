@@ -5,6 +5,7 @@ import {AiFillHome} from "react-icons/ai"
 import {BsInfoCircleFill} from "react-icons/bs"
 import { Button } from './ui/button'
 import Link from 'next/link'
+import DarkModeSwitch from './DarkModeSwitch'
  
 export default function Header() {
   return (
@@ -17,7 +18,8 @@ export default function Header() {
                             src="/images/Puff1.png"
                             width={50}
                             height={50}
-                            className="m-2 sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200"
+                            className=" animate-puls m-2 sm:rounded-t-lg 
+                            group-hover:opacity-80 transition-opacity duration-200"
                             style={{
                                 maxWidth: "100%",
                                 height: "auto",
@@ -28,11 +30,14 @@ export default function Header() {
                             
                             <MenuItem title="ABOUT" address="/about" Icon={BsInfoCircleFill}/>           
                     </div>
-                    <div className="">
+                    <div className="flex items-center space-x-4">
+                        <div>
+                            <DarkModeSwitch />
+                        </div>
                         <Link href="">
                         <Button 
                             variant="outline"
-                            className='bg-red-600/50 '>
+                            className='bg-red-600/40 mr-2'>
                                 <Image 
                                  height={6}
                                  width={6}

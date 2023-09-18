@@ -20,7 +20,7 @@ export default function DarkModeSwitch() {
                     variant="ghost"
                     size="icon"
                     aria-label="Toggle theme"
-                    className="mr-6"
+                    className="mr-6 hover:text-red-700"
                     onClick={() => setTheme(theme === "dark" ? "light": "dark")}
                     >
                     <SunIcon className="h-6 w-6 rotate-0 scale-100 transition-all

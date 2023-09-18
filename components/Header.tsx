@@ -18,7 +18,7 @@ export default function Header() {
                             src="/images/Puff1.png"
                             width={50}
                             height={50}
-                            className=" animate-puls m-2 sm:rounded-t-lg 
+                            className=" hover:animate-ping m-2 sm:rounded-t-lg 
                             group-hover:opacity-80 transition-opacity duration-200"
                             style={{
                                 maxWidth: "100%",
@@ -42,13 +42,16 @@ export default function Header() {
                                  height={6}
                                  width={6}
                                  alt="Puff"
-                                className="mr-2 h-4 w-4"
+                                className="hover:animate-spin mr-2 h-4 w-4"
                                 src="/images/Puff1.png"
                                   />
-                               <span className='font-bold text-2xl mr-1'>
+                               <span className='text-gray-300/90  hover:text-red-700 
+                               font-bold text-2xl mr-1 '>
                                 PUFF
                                 </span> 
-                        <span className='text-xl hidden sm:inline'>Movies</span>
+                        <span className='text-xl hidden sm:inline
+                                        text-gray-300/90  hover:text-red-700
+                        '>Movies</span>
                         </Button>
                         </Link>
 

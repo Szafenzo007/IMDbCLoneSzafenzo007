@@ -1,7 +1,8 @@
-import Image from 'next/image';
 
 
-import Results from '@/components/Results';
+export const dynamic = "force-dynamic"; // this is the fix
+
+import Results from "@/components/Results";
 
 
 
@@ -24,6 +25,8 @@ export default async function Home({ searchParams }) {
   const data = await res.json();
 
   const results = data.results;
+  // console.log({results});
+  
  
   return (
     

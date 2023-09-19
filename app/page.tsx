@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { NextPage } from 'next';
-import Container from '@/components/ui/container';
+
+
 import Results from '@/components/Results';
 
 

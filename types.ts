@@ -1,5 +1,5 @@
 export interface Result {
-    adult: booleane,
+    adult: boolean,
     backdrop_path: string,
     id: string,
     name: string,
@@ -12,8 +12,8 @@ export interface Result {
     first_air_date: string,
     vote_average: number,
     vote_count: number,
-    origin_country: []
-    
+    origin_country: [],
+    poster_path: string
     
     
     

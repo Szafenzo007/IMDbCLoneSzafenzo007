@@ -54,14 +54,16 @@ import { Result } from "@/types";
 const MovieCard: React.FC<MovieCard> = ({
     result }) => {
         return (
+         
             <Link href={`/movie/${result.id}`} 
-                 className='outline-0 
-                 focus:ring-2 hover:ring-2 
-                 ring-primary transition
-                duration-300 rounded-lg '>
+                 className='cursor-pointer sm:p-3 sm:hover:shadow-red-400 
+                 sm:shadow-md rounded-lg sm:border sm:border-yellow-400 sm:m-2
+                  transition-shadow duration-200 group '>
                 <Card className="rounded-lg border-2">
                     <CardContent className="pt-4">
-                        <div className='sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200'>
+                        <div className='cursor-pointer sm:p-3 sm:hover:shadow-red-400 
+    sm:shadow-md rounded-lg sm:border sm:border-yellow-400 sm:m-2
+     transition-shadow duration-200 group'>
                             <Image
                             
                                       
@@ -72,7 +74,10 @@ const MovieCard: React.FC<MovieCard> = ({
                                       height={300}
                                       //className="aspect-square object-cover rounded-lg transition-all
                                     //  duration-300 hover:scale-110"
-                                    //   className="sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200"
+                                      className="aspect-square object-cover rounded-lg 
+                                       duration-300 hover:scale-110sm:rounded-t-lg group-hover:opacity-80 
+                                      transition-opacity 
+                                        "
                                       style={{
                                         maxWidth: "100%",
                                         height: "auto",
@@ -87,17 +92,17 @@ const MovieCard: React.FC<MovieCard> = ({
                                 </div>
                     </CardContent>
                     <CardFooter className='flex-col items-start'>
-                        <div>
+                        
                                 <p className="line-clamp-2 text-md">{result.overview}</p>
                             <p className='font-semibold text-lg'>
                             {result.title || result.name}</p>
                             {/* <p className='text-sm text-primary/80'>  */}
                             {/* </p> */}
-                            <p className="flex items-center">
+                            <p className="flex items-center text-sm text-primary/80">
                                         {result.release_date || result.first_air_date}
                                         <FiThumbsUp className="h-5 mr-1 ml-3" /> {result.vote_count}
                                       </p>
-                        </div>
+                      
                            
                     </CardFooter>
                 </Card>

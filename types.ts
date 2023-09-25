@@ -13,7 +13,9 @@ export interface Result {
     vote_average: number,
     vote_count: number,
     origin_country: [],
-    poster_path: string
+    poster_path: string,
+    title :string,
+    release_date: string,
     
     
     

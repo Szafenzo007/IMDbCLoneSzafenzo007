@@ -45,9 +45,10 @@ import { Card,CardContent,CardFooter } from './ui/card';
 
 import { Result } from "@/types";
 
- interface MoviesCard {
+ interface MovieCard {
     result: Result;
  }
+
 
 
 

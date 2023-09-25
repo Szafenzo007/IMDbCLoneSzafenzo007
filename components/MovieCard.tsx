@@ -51,8 +51,7 @@ import { Result } from "@/types";
 
 
 
-const MovieCard: React.FC<MovieCard> = ({
-    result }) => {
+const MovieCard: React.FC<MovieCard> = ({ result }) => {
         return (
          
             <Link href={`/movie/${result.id}`} 

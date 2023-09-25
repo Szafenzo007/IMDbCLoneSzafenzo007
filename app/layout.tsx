@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from '@/components/ThemeProvider'
 import Navbar from '@/components/Navbar/Navbar'
+import SearchBox from '@/components/SearchBox'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,6 +28,8 @@ export default function RootLayout({
           <Header/>
 
           <Navbar />
+
+          <SearchBox />
 
         {children}
         </ThemeProvider>

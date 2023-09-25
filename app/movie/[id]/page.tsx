@@ -1,6 +1,10 @@
 import Image from "next/image";
 
-
+type MoviePageProps = {
+  params: {
+    id: string;
+  };
+};
 
 async function getMovie(movieId: any) {
   const res = await fetch(
@@ -9,7 +13,7 @@ async function getMovie(movieId: any) {
   return await res.json();
 }
 
-export default async function MoviePage({ params  }) {
+export default async function MoviePage({ params }: MoviePageProps) {
 
     const movieId = params.id;
     const movie = await getMovie(movieId);

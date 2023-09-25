@@ -1,15 +1,18 @@
+import Results from "@/components/Results";
 
 
 export const dynamic = "force-dynamic"; // this is the fix
 
-import Results from "@/components/Results";
 
-
+type SearchParams = {
+  genre?: string;
+  // Add other properties as needed
+};
 
 
 const API_KEY = process.env.API_KEY;
 
-export default async function Home({ searchParams }) {
+export default async function Home({ searchParams }: { searchParams: SearchParams }) {
   const genre = searchParams.genre || "fetchTrending";
 
   const res = await fetch(
